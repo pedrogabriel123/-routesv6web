@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Certifique-se de substituir pelo logotipo do PetsAdoption
+import logo from '../assets/logo.png'; 
 
 const Footer = () => {
   return (

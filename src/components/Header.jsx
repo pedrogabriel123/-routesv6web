@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Certifique-se de substituir pelo logotipo do PetsAdoption
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   return (
@@ -7,8 +8,15 @@ const Header = () => {
       <img src={logo} alt="Logo PetsAdoption" style={{ height: '50px' }} />
       <nav>
         <ul style={{ listStyleType: 'none', margin: 0, padding: 0, display: 'flex', justifyContent: 'center' }}>
-          <li style={{ margin: '0 20px' }}><a href="#home" style={{ color: '#fff', textDecoration: 'none' }}>Home</a></li>
-          <li style={{ margin: '0 20px' }}><a href="#about" style={{ color: '#fff', textDecoration: 'none' }}>Sobre</a></li>
+          <li style={{ margin: '0 20px' }}>
+            <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>Home</Link>
+          </li>
+          <li style={{ margin: '0 20px' }}>
+            <Link to="/servicos" style={{ color: '#fff', textDecoration: 'none' }}>Serviços</Link>
+          </li>
+          <li style={{ margin: '0 20px' }}>
+            <Link to="/pets" style={{ color: '#fff', textDecoration: 'none' }}>Pets</Link>
+          </li>
         </ul>
       </nav>
     </header>
